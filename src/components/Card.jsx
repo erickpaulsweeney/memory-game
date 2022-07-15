@@ -2,8 +2,8 @@ import Icon from "./Icon";
 
 function Card(props) {
     return (
-        <div className="card" onClick={() => props.handleClick(props)}>
-            <div className="icon-container" style={{ backgroundColor: props.bgColor, display: props.display ? 'flex' : 'none' }}>
+        <div className="card" onClick={() => props.handleClick(props)} style={{ transform: props.display ? 'rotateX(180deg)' : null }}>
+            <div className="icon-container" style={{ backgroundColor: props.bgColor }}>
                 <Icon svgNo={props.svgNo}/>
             </div>
         </div>
