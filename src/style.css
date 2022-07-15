@@ -42,6 +42,7 @@
     border: none;
     padding: 8px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .container-cards {
